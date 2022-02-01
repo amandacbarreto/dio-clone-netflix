@@ -211,17 +211,30 @@ body{
     line-height: 1.2;
     padding: 10px;
     cursor: pointer;
+    margin-right: 10px;
+
 }
 
-.assistir button{
+
+.assistir {
     background-color: white;
-    color: var(--preta);    
-    margin-right: 30px;
+    color: var(--preta); 
 }
 
 .maisInformacoes{
     background-color: rgba(128, 128, 128, 0.8);
     color: white;
+}
+
+.assistir:hover{
+    background-color: rgba(207, 202, 202, 0.993);
+    transition: .3s ease all;
+}
+
+
+.maisInformacoes:hover{
+    background-color: rgba(207, 202, 202, 0.747);
+    transition: .3s ease all;
 }
 
 
