@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Netflix Clone</title>
+</head>
+
+<body>
+    <div class="main-view">
+        <header>
+            <div class="pinning-header-container">
+                <div class="main-header">
+                    <div class="menu-navigation primary-menu">
+                        <div class="logo">
+                            <a href="http://logodownload.org" target="_blank"><img
+                                    src="https://logodownload.org/wp-content/uploads/2014/10/netflix-logo-2-1.png"
+                                    alt="netflix-logo-2" /></a>
+                        </div>
+                        <ul class="primary-navigation">
+                            <li class="navigation-tab"><a class="current" href="#">Inicio</a></li>
+                            <li class="navigation-tab"><a href="#">Séries</a></li>
+                            <li class="navigation-tab"><a href="#">Filmes</a></li>
+                            <li class="navigation-tab"><a href="#">Bombando</a></li>
+                            <li class="navigation-tab"><a href="#">Minha lista</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-navigation secondary-menu">
+                        <ul class="secondary-navigation">
+                            <div class="navigation-element search-button">
+                                <button>
+                                    <img src="https://www.queryly.com/images/whitesearchicon.png" alt="Buscar" />
+                                </button>
+                            </div>
+                            <div class="navigation-element">
+                                <a href="#">Infantil</a>
+                            </div>
+                            <div class="navigation-element notification-button">
+                                <button>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_Oo3nBJuoMNSGKG_jxMAOxpJmoUGuVT5MVHI6MjQMhJyI3o0ZFMiEw6Nl___tSXO3Z0&usqp=CAU"
+                                        alt="Notificações" />
+                                </button>
+                            </div>
+                            <div class="navigation-element account">
+                                <img src="data:image/jpeg;base64,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"
+                                    alt="Buscar" />
+                                <span class="dropdown"></span>
+                            </div>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main-serie">
+            <img class="main-logo"
+                src="https://dnm.nflximg.net/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABU8rMk53-EY9Zo4SCrodPDAswLUuF5SN-ZPQ17T5R1dPYj-_5c7e9K2M3VVlpOgiCJARqHMu_2d1ewJvn_e18F5f5s4.png?r=4ce"></img>
+            <p class="description">Em meio ao conflito entre as cidades-gêmeas de Piltover e Zaun, duas irmãs lutam em
+                lados opostos de uma guerra entre tecnologias mágicas e convicções incompatíveis.</p>
+            <div class="serieButtons">
+                <button class="assistir">Assistir</button>
+                <button class="maisInformacoes">Mais informações</button>
+        
+            </div>
+        </div>    
+    </div>
+    </div>
+
+
+
+    <div class="lists">
+        <div class="row-genre">
+            <h2 class="categories">Séries</h2>
+            <div class="serie-icons"><img
+                    src="https://occ-0-522-1380.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRHzw5Kn0o0NgSgzBvQ6V6pQhVvZAkoV_WgE-EQHbaPIwqK4NHNEDrr80RZ0e3MI98RQMfcTdc0KqI6htLFANJmY8naJ_xvXvPx7hrKDZlNoaf1Z1-6aFYCxlA1k.jpg?r=80e" />
+            </div>
+            <div class="serie-icons"><img
+                    src="https://occ-0-522-1380.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRHzw5Kn0o0NgSgzBvQ6V6pQhVvZAkoV_WgE-EQHbaPIwqK4NHNEDrr80RZ0e3MI98RQMfcTdc0KqI6htLFANJmY8naJ_xvXvPx7hrKDZlNoaf1Z1-6aFYCxlA1k.jpg?r=80e" />
+            </div>
+            <div class="serie-icons"><img
+                    src="https://occ-0-522-1380.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRHzw5Kn0o0NgSgzBvQ6V6pQhVvZAkoV_WgE-EQHbaPIwqK4NHNEDrr80RZ0e3MI98RQMfcTdc0KqI6htLFANJmY8naJ_xvXvPx7hrKDZlNoaf1Z1-6aFYCxlA1k.jpg?r=80e" />
+            </div>
+
+        </div>
+
+        <li class="categories">Em alta</li>
+        <li class="categories">Continuar assistindo como AMANDA</li>
+        <li class="categories">Seleção da equipe: Coisas do coração</li>
+        <li class="categories">Assistir novamente</li>
+        <li class="categories">Séries premiadas</li>
+        <li class="categories">Minha lista</li>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
